@@ -19,7 +19,7 @@ import androidx.core.view.WindowInsetsCompat;
 import androidx.fragment.app.FragmentStatePagerAdapter;
 import androidx.viewpager.widget.ViewPager;
 
-import com.ute.moneybuddyp2q.homeFragment.ViewHomeAdapter;
+//import com.ute.moneybuddyp2q.homeFragment.ViewHomeAdapter;
 
 import java.util.ArrayList;
 
@@ -34,8 +34,8 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         viewPager= findViewById(R.id.viewpager);
-        ViewHomeAdapter adapter = new ViewHomeAdapter(getSupportFragmentManager(), FragmentStatePagerAdapter.BEHAVIOR_RESUME_ONLY_CURRENT_FRAGMENT);
-        viewPager.setAdapter(adapter);
+//        ViewHomeAdapter adapter = new ViewHomeAdapter(getSupportFragmentManager(), FragmentStatePagerAdapter.BEHAVIOR_RESUME_ONLY_CURRENT_FRAGMENT);
+//        viewPager.setAdapter(adapter);
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
@@ -47,8 +47,8 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 // Tạo Intent để chuyển tới managerAccount Activity
-                Intent intent = new Intent(MainActivity.this, managerAccount.class);
-                startActivity(intent);
+//                Intent intent = new Intent(MainActivity.this, managerAccount.class);
+//                startActivity(intent);
             }
         });
 
@@ -57,8 +57,8 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 // Tạo Intent để chuyển tới managerAccount Activity
-                Intent intent = new Intent(MainActivity.this, SpendingActivity.class);
-                startActivity(intent);
+//                Intent intent = new Intent(MainActivity.this, SpendingActivity.class);
+//                startActivity(intent);
             }
         });
 
@@ -77,8 +77,8 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 // Tạo Intent để chuyển tới managerAccount Activity
-                Intent intent = new Intent(MainActivity.this, CalendarActivity.class);
-                startActivity(intent);
+//                Intent intent = new Intent(MainActivity.this, CalendarActivity.class);
+//                startActivity(intent);
             }
         });
 
