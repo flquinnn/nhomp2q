@@ -1,3 +1,24 @@
 <resources>
-    <string name="app_name">Nhom03</string>
+    <string name="app_name" translatable="false">nhomp2q</string>
+    <string-array name="money_options">
+        <item>Chi tiêu</item>
+        <item>Tiết kiệm</item>
+    </string-array>
+
+    <string-array name="friend_options">
+        <item>Mọi người</item>
+        <item>Không</item>
+    </string-array>
+
+    <string-array name="note_options">
+        <item>Tất cả</item>
+        <item>Không</item>
+    </string-array>
+
+    <string-array name="group_options">
+        <item>Tất cả</item>
+        <item>Không</item>
+    </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment" translatable="false">Hello blank fragment</string>
 </resources>

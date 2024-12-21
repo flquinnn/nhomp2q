@@ -18,7 +18,6 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 import androidx.fragment.app.FragmentStatePagerAdapter;
 import androidx.viewpager.widget.ViewPager;
-
 import com.thick124.loplttd03.nhom03.homeFragment.ViewHomeAdapter;
 
 import java.util.ArrayList;
@@ -34,8 +33,8 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         viewPager= findViewById(R.id.viewpager);
-        ViewHomeAdapter adapter = new ViewHomeAdapter(getSupportFragmentManager(), FragmentStatePagerAdapter.BEHAVIOR_RESUME_ONLY_CURRENT_FRAGMENT);
-        viewPager.setAdapter(adapter);
+//        ViewHomeAdapter adapter = new ViewHomeAdapter(getSupportFragmentManager(), FragmentStatePagerAdapter.BEHAVIOR_RESUME_ONLY_CURRENT_FRAGMENT);
+//        viewPager.setAdapter(adapter);
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
@@ -53,6 +52,24 @@ public class MainActivity extends AppCompatActivity {
 //        });
 
         spending = findViewById(R.id.spending_layout);
+        account.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                // Tạo Intent để chuyển tới managerAccount Activity
+//                Intent intent = new Intent(MainActivity.this, managerAccount.class);
+//                startActivity(intent);
+            }
+        });
+
+        spending = findViewById(R.id.spending_layout);
+        spending.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                // Tạo Intent để chuyển tới managerAccount Activity
+//                Intent intent = new Intent(MainActivity.this, SpendingActivity.class);
+//                startActivity(intent);
+            }
+        });
 
         addSpending = findViewById(R.id.add_spending);
 //        addSpending.setOnClickListener(new View.OnClickListener() {
@@ -73,6 +90,14 @@ public class MainActivity extends AppCompatActivity {
 //                startActivity(intent);
 //            }
 //        });
+        calendar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                // Tạo Intent để chuyển tới managerAccount Activity
+//                Intent intent = new Intent(MainActivity.this, CalendarActivity.class);
+//                startActivity(intent);
+            }
+        });
 
     }
 }

@@ -10,9 +10,29 @@
         android:id="@+id/viewpager"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_above="@+id/menu_home"/>
+        android:layout_above="@+id/menu_home">
+    </androidx.viewpager.widget.ViewPager>
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dương Xuân Phú - 22115053122330" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nguyễn Trúc Quỳnh - 22115053122335" />
 
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nguyễn Nhật Hải Quỳnh - 22115053122334" />
+
+    </LinearLayout>
     <!--    layout menu-->
     <LinearLayout
         android:id="@+id/menu_home"
