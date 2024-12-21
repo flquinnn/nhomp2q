@@ -18,8 +18,7 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 import androidx.fragment.app.FragmentStatePagerAdapter;
 import androidx.viewpager.widget.ViewPager;
-
-//import com.ute.moneybuddyp2q.homeFragment.ViewHomeAdapter;
+import com.thick124.loplttd03.nhom03.homeFragment.ViewHomeAdapter;
 
 import java.util.ArrayList;
 
@@ -43,6 +42,16 @@ public class MainActivity extends AppCompatActivity {
         });
 
         account = findViewById(R.id.account);
+//        account.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                // Tạo Intent để chuyển tới managerAccount Activity
+//                Intent intent = new Intent(MainActivity.this, managerAccount.class);
+//                startActivity(intent);
+//            }
+//        });
+
+        spending = findViewById(R.id.spending_layout);
         account.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -63,16 +72,24 @@ public class MainActivity extends AppCompatActivity {
         });
 
         addSpending = findViewById(R.id.add_spending);
-        addSpending.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                // Tạo Intent để chuyển tới managerAccount Activity
-                Intent intent = new Intent(MainActivity.this, AddSpendingActivity.class);
-                startActivity(intent);
-            }
-        });
+//        addSpending.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                // Tạo Intent để chuyển tới managerAccount Activity
+//                Intent intent = new Intent(MainActivity.this, AddSpendingActivity.class);
+//                startActivity(intent);
+//            }
+//        });
 
         LinearLayout calendar = findViewById(R.id.calendar);
+//        calendar.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                // Tạo Intent để chuyển tới managerAccount Activity
+//                Intent intent = new Intent(MainActivity.this, CalendarActivity.class);
+//                startActivity(intent);
+//            }
+//        });
         calendar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
